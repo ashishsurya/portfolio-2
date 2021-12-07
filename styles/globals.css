@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Helvetica";
+  src: url("/fonts/Helvetica/Helvetica.ttf");
+}
+
+
+
+body{
+  font-family: "Helvetica";
+  background-color: #18181c;
+  color: white;
+  transition: all;
+  animation-duration: 500ms;
+}
+
+
+@layer components {
+
+}
+
+.cursor-newtab {
+  cursor : url("https://img.icons8.com/material-outlined/24/ffffff/up-right-arrow.png"), pointer;
+}
