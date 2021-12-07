@@ -5,7 +5,7 @@ function FeaturedProjects() {
     <div className='px-5 mt-10'>
       <h1 className='text-2xl  text-green-500 font-bold'>Featured Projects</h1>
       {/* projects */}
-      <div className='grid md:grid-cols-2 gap-3 mt-1 pl-3 pt-3 md:pl-9'>
+      <div className='grid md:grid-cols-2 gap-6 mt-1 pl-3 pt-3 md:pl-9'>
         {featuredProjects.map((fp) => (
           <ProjectContainer
             key={fp.id}
@@ -16,7 +16,7 @@ function FeaturedProjects() {
           />
         ))}
       </div>
-      <button className='flex items-center  space-x-2 my-2'>
+      <button className='flex items-center  space-x-2 pt-6'>
         <p className='text-base md:text-lg'>More Projects</p>
         <img src='https://img.icons8.com/ios-filled/20/ffffff/long-arrow-right.png' /> 
       </button>
