@@ -5,7 +5,7 @@ import NavBar from '../components/NavBar';
 
 export default function Home() {
   return (
-    <div className='max-w-3xl mx-auto  relative'>
+    <div className='max-w-3xl mx-auto'>
       <NavBar />
       <main>
         <Hero />
