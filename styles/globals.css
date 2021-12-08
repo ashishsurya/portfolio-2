@@ -12,7 +12,7 @@
 body{
   font-family: "Helvetica";
   background-color: #121215;
-  color: white;
+  color: white !important;
   transition: all;
   animation-duration: 500ms;
 }
@@ -24,4 +24,12 @@ body{
 
 .cursor-newtab {
   cursor : url("https://img.icons8.com/material-outlined/24/ffffff/up-right-arrow.png"), pointer;
+}
+
+.MuiTab-root	{
+  color: white !important;
+}
+
+.MuiTabPanel-root	{
+  color: green !important;
 }

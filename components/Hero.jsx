@@ -9,10 +9,18 @@ export default function Hero() {
         <p>👀 Looking for internships in web-development field.</p>
         {/* action buttons */}
         <div className='my-3 space-x-2 text-sm md:text-base text-white'>
-          <button className='border text-sm md:text-base p-2 border-green-400  hover:bg-green-900'>
+          <button
+            onClick={() => {
+              window.open(
+                'https://drive.google.com/file/d/11INUvwCRQYt2_l3XSJ2CyoZg_yLhWYdm/view?usp=sharing',
+                '_blank'
+              );
+            }}
+            className='border text-sm md:text-base p-2 border-green-400 transition-all duration-500 hover:scale-90'
+          >
             View Resume
           </button>
-          <button className="bg-green-600 p-2">Contact Me</button>
+          <button className='bg-green-600 p-2 hover:scale-90 transition-all duration-500'>Contact Me</button>
         </div>
       </div>
     </div>

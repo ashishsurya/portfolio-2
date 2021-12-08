@@ -1,7 +1,7 @@
 export default function ContactContainer() {
   return (
     <div className='p-5 border-t border-[#28282c] mt-6'>
-      <p className='text-xl'>You can reach me via these handles &darr;</p>
+      <p className='text-base sm:text-xl'>You can reach me via these handles &darr;</p>
       <div className="grid grid-cols-2 pt-6">
         <SocialMediaHandles title="Social Media 🌐" data={socialMediaHandle} />
         <SocialMediaHandles title="Developer Profiles 👨🏻‍💻" data={developerProfiles}/>
@@ -32,9 +32,9 @@ const developerProfiles = [
 
 const SocialMediaHandles = ({title, data}) => {
   return (
-    <div className="space-y-2">
-      <h3 className="text-lg">{title}</h3>
-      <div className="flex flex-col text-[#545457] space-y-1">
+    <div className="space-y-2 text-sm sm:text-base">
+      <h3 className="">{title}</h3>
+      <div className="flex flex-col text-[#545457] space-y-1 ">
         {data.map(d => (
           <a key={d.title} href={d.url}>{d.title}</a>
         ))}

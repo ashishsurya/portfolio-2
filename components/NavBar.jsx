@@ -34,7 +34,9 @@ export default function NavBar() {
               <Link href={'/contact'}>/contact</Link>
             </p>
             <p className=''>
-              <Link href={'/resume'}>/resume</Link>
+              <a href='https://drive.google.com/file/d/11INUvwCRQYt2_l3XSJ2CyoZg_yLhWYdm/view?usp=sharing'>
+                /resume
+              </a>
             </p>
             <p className=''>
               <Link href={'/dev-profiles'}>/devProfiles</Link>
@@ -54,7 +56,12 @@ export default function NavBar() {
           <Link href={'/contact'}>/contact</Link>
         </p>
         <p className='hover:border-b-2'>
-          <Link href={'/resume'}>/resume</Link>
+          <a
+            href='https://drive.google.com/file/d/11INUvwCRQYt2_l3XSJ2CyoZg_yLhWYdm/view?usp=sharing'
+            type='_blank'
+          >
+            /resume
+          </a>
         </p>
         <p className='hover:border-b-2'>
           <Link href={'/dev-profiles'}>/devProfiles</Link>

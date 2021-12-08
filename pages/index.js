@@ -3,6 +3,7 @@ import ContactContainer from '../components/ContactContainer';
 import FeaturedProjects from '../components/FeaturedProjects';
 import Hero from '../components/Hero';
 import NavBar from '../components/NavBar';
+import BasicTabs from '../components/SkillsTabsContainer';
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
         <Hero />
       </main>
       <FeaturedProjects />
+      <BasicTabs />
       <ContactContainer />
     </div>
   );
