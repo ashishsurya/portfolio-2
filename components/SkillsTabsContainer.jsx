@@ -5,6 +5,7 @@ const tabs = [
   { id: 0, title: 'Languages' },
   { id: 1, title: 'Frameworks' },
   { id: 2, title: 'Databases' },
+  { id: 3, title: 'Tools' },
 ];
 
 const result = [
@@ -34,6 +35,10 @@ const result = [
         name: 'CSS3',
         img: 'https://img.icons8.com/color/60/000000/css3.png',
       },
+      {
+        name: 'GrpahQL',
+        img: 'https://cdn.icon-icons.com/icons2/3053/PNG/512/graphql_playground_macos_bigsur_icon_190105.png',
+      },
     ],
   },
   {
@@ -51,7 +56,7 @@ const result = [
         img: 'https://img.icons8.com/color/60/000000/django.png',
       },
       {
-        name: 'FLutter',
+        name: 'Flutter',
         img: 'https://img.icons8.com/fluency/60/000000/flutter.png',
       },
       {
@@ -61,6 +66,10 @@ const result = [
       {
         name: 'Tailwind Css',
         img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/2048px-Tailwind_CSS_Logo.svg.png',
+      },
+      {
+        name: 'Fast-API',
+        img: 'https://cdn.worldvectorlogo.com/logos/fastapi.svg',
       },
     ],
   },
@@ -80,9 +89,28 @@ const result = [
       },
     ],
   },
+  {
+    data: [
+      {
+        name: 'Git',
+        img: 'https://img.icons8.com/color/60/000000/git.png',
+      },
+      {
+        name: 'Heroku',
+        img: 'https://img.icons8.com/color/60/000000/heroku.png',
+      },
+      {
+        name: 'Firebase',
+        img: 'https://img.icons8.com/color/60/000000/firebase.png',
+      },
+      {
+        name: 'Netlify',
+        img: 'https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/60/000000/external-netlify-a-cloud-computing-company-that-offers-hosting-and-serverless-backend-services-for-static-websites-logo-shadow-tal-revivo.png',
+      },
+    ],
+  },
 ];
 
-<img src='' />;
 
 export default function SkillsTabsContainer() {
   const [value, setValue] = useState(0);
@@ -91,7 +119,7 @@ export default function SkillsTabsContainer() {
       <h1 className='text-2xl md:text-4xl text-green-500 font-bold'>
         Framewoks and Tools I am aware of, &darr;
       </h1>
-      <div className='flex  mt-4 pl-2'>
+      <div className='flex justify-start mt-4 pl-2 overflow-x-scroll border-b border-[#2f2f2f]'>
         {tabs.map((tab) => (
           <p
             onClick={() => {
@@ -100,7 +128,7 @@ export default function SkillsTabsContainer() {
             key={tab.id}
             className={`text-white text-lg cursor-pointer ${
               tab.id === value
-                ? '!border-b-2 border-green-600 bg-[#1e1e1e]'
+                ? '!border-b-4 border-green-600 bg-[#1e1e1e]'
                 : null
             }  px-5 py-3`}
           >
@@ -110,13 +138,20 @@ export default function SkillsTabsContainer() {
       </div>
       <div className='flex flex-wrap'>
         {result[value].data?.map((item) => (
-          <div className='flex flex-col   items-center px-10 py-5'>
+          <div
+            key={item.name}
+            className='flex flex-col   items-center px-10 py-5 text-[#545457]'
+          >
             <img
-              className={`${item.name === 'Tailwind Css' ? 'w-[60px]' : null}`}
+              className={`${
+                item.name === 'Tailwind Css' || 'GraphQL' || 'Fast-API'
+                  ? 'w-[60px] h-[60px]'
+                  : null
+              }`}
               src={item.img}
               alt=''
             />
-            <h1 className='hidden md:inline-flex'>{item.name}</h1>
+            <h1 className='hidden md:inline-flex font-extralight'>{item.name}</h1>
           </div>
         ))}
       </div>

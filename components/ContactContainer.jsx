@@ -1,6 +1,6 @@
-export default function ContactContainer() {
+export default function ContactContainer({reference}) {
   return (
-    <div className='p-5 border-t border-[#28282c] mt-6'>
+    <div ref={reference} id="contact" className='p-5 border-t border-[#28282c] mt-6'>
       <p className='text-base sm:text-xl'>You can reach me via these handles &darr;</p>
       <div className="grid grid-cols-2 pt-6">
         <SocialMediaHandles title="Social Media 🌐" data={socialMediaHandle} />
@@ -36,7 +36,7 @@ const SocialMediaHandles = ({title, data}) => {
       <h3 className="">{title}</h3>
       <div className="flex flex-col text-[#545457] space-y-1 ">
         {data.map(d => (
-          <a key={d.title} href={d.url}>{d.title}</a>
+          <a key={d.title} href={d.url} type="_blank">{d.title}</a>
         ))}
       </div>
     </div>

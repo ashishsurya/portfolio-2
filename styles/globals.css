@@ -3,33 +3,30 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: "Helvetica";
-  src: url("/fonts/Helvetica/Helvetica.ttf");
+  font-family: 'Helvetica';
+  src: url('/fonts/Helvetica/Helvetica.ttf');
 }
 
-
-
-body{
-  font-family: "Helvetica";
+body {
+  font-family: 'Helvetica';
   background-color: #121215;
   color: white !important;
   transition: all;
   animation-duration: 500ms;
 }
 
-
 @layer components {
-
 }
 
 .cursor-newtab {
-  cursor : url("https://img.icons8.com/material-outlined/24/ffffff/up-right-arrow.png"), pointer;
+  cursor: url('https://img.icons8.com/material-outlined/24/ffffff/up-right-arrow.png'),
+    pointer;
 }
 
-.MuiTab-root	{
+.MuiTab-root {
   color: white !important;
 }
 
-.MuiTabPanel-root	{
+.MuiTabPanel-root {
   color: green !important;
 }

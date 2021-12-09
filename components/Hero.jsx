@@ -1,4 +1,5 @@
-export default function Hero() {
+import { Link } from 'react-scroll';
+export default function Hero({ footerRef }) {
   return (
     <div className='mt-20 px-5 space-y-6'>
       <h1 className='text-5xl text-green-400 md:text-7xl font-bold tracking-wide'>
@@ -20,7 +21,14 @@ export default function Hero() {
           >
             View Resume
           </button>
-          <button className='bg-green-600 p-2 hover:scale-90 transition-all duration-500'>Contact Me</button>
+          <Link
+            to='contact'
+            smooth
+            duration={1000}
+            className='bg-green-600 p-2 hover:scale-90 transition-all duration-500 cursor-pointer'
+          >
+            Contact Me
+          </Link>
         </div>
       </div>
     </div>

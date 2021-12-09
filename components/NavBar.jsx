@@ -1,6 +1,7 @@
 import { Modal } from '@mui/material';
 import Link from 'next/link';
 import React from 'react';
+import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
 
 export default function NavBar() {
   const [open, setOpen] = React.useState(false);
@@ -30,17 +31,20 @@ export default function NavBar() {
             <p className=''>
               <Link href={'/'}>/home</Link>
             </p>
-            <p className=''>
-              <Link href={'/contact'}>/contact</Link>
-            </p>
+            <ScrollLink
+              className='cursor-pointer'
+              to='contact'
+              duration={1000}
+              smooth
+            >
+              /contact
+            </ScrollLink>
             <p className=''>
               <a href='https://drive.google.com/file/d/11INUvwCRQYt2_l3XSJ2CyoZg_yLhWYdm/view?usp=sharing'>
                 /resume
               </a>
             </p>
-            <p className=''>
-              <Link href={'/dev-profiles'}>/devProfiles</Link>
-            </p>
+
             <p className=''>
               <Link href={'/projects'}>/projects</Link>
             </p>
@@ -49,13 +53,18 @@ export default function NavBar() {
       </Modal>
       {/* modal end */}
       <nav className='hidden sm:flex  sm:items-center sm:justify-center h-[80px] font-mono space-x-3 md:space-x-5 !text-green-300 font-extrabold'>
-        <p className='hover:border-b-2'>
+        <p className=''>
           <Link href={'/'}>/home</Link>
         </p>
-        <p className='hover:border-b-2'>
-          <Link href={'/contact'}>/contact</Link>
-        </p>
-        <p className='hover:border-b-2'>
+        <ScrollLink
+          className='cursor-pointer'
+          to='contact'
+          duration={1000}
+          smooth
+        >
+          /contact
+        </ScrollLink>
+        <p className=''>
           <a
             href='https://drive.google.com/file/d/11INUvwCRQYt2_l3XSJ2CyoZg_yLhWYdm/view?usp=sharing'
             type='_blank'
@@ -63,12 +72,8 @@ export default function NavBar() {
             /resume
           </a>
         </p>
-        <p className='hover:border-b-2'>
-          <Link href={'/dev-profiles'}>/devProfiles</Link>
-        </p>
-        <p className='hover:border-b-2'>
-          <Link href={'/projects'}>/projects</Link>
-        </p>
+
+        <ScrollLink to="projects" smooth duration={1000} href={'/projects'}>/projects</ScrollLink>
       </nav>
     </>
   );

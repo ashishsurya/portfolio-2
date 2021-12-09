@@ -2,7 +2,7 @@ import ProjectContainer from './ProjectContainer';
 
 function FeaturedProjects() {
   return (
-    <div className='px-5 mt-10'>
+    <div id='projects' className='px-5 mt-10'>
       <h1 className='text-2xl md:text-4xl  text-green-500 font-bold'>Featured Projects</h1>
       {/* projects */}
       <div className='grid md:grid-cols-2 gap-6 mt-1 pl-3 pt-3 md:pl-9'>
