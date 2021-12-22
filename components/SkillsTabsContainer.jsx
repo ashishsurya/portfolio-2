@@ -37,7 +37,7 @@ const result = [
       },
       {
         name: 'GrpahQL',
-        img: 'https://cdn.icon-icons.com/icons2/3053/PNG/512/graphql_playground_macos_bigsur_icon_190105.png',
+        img: "https://img.icons8.com/color/60/000000/graphql.png",
       },
     ],
   },
@@ -144,7 +144,7 @@ export default function SkillsTabsContainer() {
           >
             <img
               className={`${
-                item.name === 'Tailwind Css' || 'GraphQL' || 'Fast-API'
+                item.name === 'Tailwind Css'  || 'Fast-API'
                   ? 'w-[60px] h-[60px]'
                   : null
               }`}
