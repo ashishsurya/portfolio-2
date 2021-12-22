@@ -13,6 +13,11 @@ export default function Home() {
     <div className='max-w-3xl mx-auto'>
       <Head>
         <title>Surya Ashish - Porfolio</title>
+        <meta charset='utf-8' />
+        <meta
+          name='Portfloio'
+          CONTENT='Portfolio of Surya Ashish'
+        />
       </Head>
       <NavBar />
       <main>
