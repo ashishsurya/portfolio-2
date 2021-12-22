@@ -34,9 +34,9 @@ const SocialMediaHandles = ({title, data}) => {
   return (
     <div className="space-y-2 text-sm sm:text-base">
       <h3 className="">{title}</h3>
-      <div className="flex flex-col text-[#545457] space-y-1 ">
+      <div className="flex flex-col text-[#545457] space-y-1">
         {data.map(d => (
-          <a key={d.title} href={d.url} type="_blank">{d.title}</a>
+          <a key={d.title} href={d.url} type="_blank" className="hover:text-white">{d.title}</a>
         ))}
       </div>
     </div>

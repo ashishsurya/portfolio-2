@@ -17,7 +17,7 @@ export default function Hero({ footerRef }) {
                 '_blank'
               );
             }}
-            className='border text-sm md:text-base p-2 border-green-400 transition-all duration-500 hover:scale-90'
+            className='hover:text-green-400 text-sm md:text-base p-2 border-green-400 transition-all duration-500 hover:scale-90'
           >
             View Resume
           </button>

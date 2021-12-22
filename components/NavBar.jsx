@@ -73,7 +73,7 @@ export default function NavBar() {
           </a>
         </p>
 
-        <ScrollLink to="projects" smooth duration={1000} href={'/projects'}>/projects</ScrollLink>
+        <Link href={'/projects'}>/projects</Link>
       </nav>
     </>
   );

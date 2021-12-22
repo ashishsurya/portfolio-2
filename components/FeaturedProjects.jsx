@@ -1,6 +1,9 @@
+import { useRouter } from 'next/router';
 import ProjectContainer from './ProjectContainer';
 
 function FeaturedProjects() {
+
+  const router = useRouter()
   return (
     <div id='projects' className='px-5 mt-10'>
       <h1 className='text-2xl md:text-4xl  text-green-500 font-bold'>Featured Projects</h1>
@@ -16,7 +19,7 @@ function FeaturedProjects() {
           />
         ))}
       </div>
-      <button className='flex items-center  space-x-2 pt-6'>
+      <button onClick={() => {router.push("/projects")}} className='flex items-center  space-x-2 pt-6'>
         <p className='text-base md:text-lg'>More Projects</p>
         <img src='https://img.icons8.com/ios-filled/20/ffffff/long-arrow-right.png' /> 
       </button>
@@ -48,6 +51,13 @@ const featuredProjects = [
     techStack: ['Next.js', 'Tailwind Css', 'Next-Auth'],
     url: 'https://github.com/ashishsurya126/instagram-clone-next.js',
   },
+  {
+    id: 4,
+    title: "Twitter Clone 🔵",
+    description: "",
+    techStack: ["Next.js", "Tailwind CSS", "Prisma", "JWT", "Sqlite"],
+    url:"https://github.com/ashishsurya126/twitter-clone"
+  }
 ];
 
 export default FeaturedProjects;
