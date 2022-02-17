@@ -1,6 +1,6 @@
 const Project = ({ name, url, description, topics, homepage }) => {
   return (
-    <div className=' relative hover:shadow-2xl  border border-green-800  hover:border-none    flex flex-col space-y-4 rounded px-3 py-4'>
+    <div className=' relative hover:shadow-2xl  border border-[#61DAFB]  hover:border-none    flex flex-col space-y-4 rounded px-3 py-4'>
       <div className='flex items-center'>
         <h1 className='text-xl flex-1 font-bold'>{name}</h1>
         <a href={url}>

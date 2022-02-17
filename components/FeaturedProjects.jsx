@@ -6,7 +6,7 @@ function FeaturedProjects() {
   const router = useRouter()
   return (
     <div id='projects' className='px-5 mt-10'>
-      <h1 className='text-2xl md:text-4xl  text-green-500 font-bold'>Featured Projects</h1>
+      <h1 className='text-2xl md:text-4xl  text-[#61DAFB] font-bold'>Featured Projects</h1>
       {/* projects */}
       <div className='grid md:grid-cols-2 gap-6 mt-1 pl-3 pt-3 md:pl-9'>
         {featuredProjects.map((fp) => (
@@ -56,7 +56,7 @@ const featuredProjects = [
     title: "Twitter Clone 🔵",
     description: "",
     techStack: ["Next.js", "Tailwind CSS", "Prisma", "JWT", "Sqlite"],
-    url:"https://github.com/ashishsurya126/twitter-clone"
+    url:"https://github.com/ashishsurya126/twitter-clone-nextjs"
   }
 ];
 

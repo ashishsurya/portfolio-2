@@ -116,7 +116,7 @@ export default function SkillsTabsContainer() {
   const [value, setValue] = useState(0);
   return (
     <div className='p-5 transition-all duration-500 '>
-      <h1 className='text-2xl md:text-4xl text-green-500 font-bold'>
+      <h1 className='text-2xl md:text-4xl text-[#61DAFB] font-bold'>
         Framewoks and Tools I am aware of, &darr;
       </h1>
       <div className='flex justify-start mt-4 pl-2 overflow-x-scroll border-b border-[#2f2f2f]'>
@@ -128,7 +128,7 @@ export default function SkillsTabsContainer() {
             key={tab.id}
             className={`text-white text-lg cursor-pointer ${
               tab.id === value
-                ? '!border-b-4 border-green-600 bg-[#1e1e1e]'
+                ? '!border-b-4 border-[#61DAFB] bg-[#1e1e1e]'
                 : null
             }  px-5 py-3`}
           >
@@ -151,7 +151,7 @@ export default function SkillsTabsContainer() {
               src={item.img}
               alt=''
             />
-            <h1 className='hidden md:inline-flex font-extralight'>{item.name}</h1>
+            <h1 className='hidden md:inline-flex font-extralight text-white'>{item.name}</h1>
           </div>
         ))}
       </div>

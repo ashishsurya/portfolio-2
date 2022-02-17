@@ -10,9 +10,9 @@ export default function Home() {
   const footerRef = useRef(null);
 
   return (
-    <div className='max-w-3xl mx-auto'>
+    <div className='max-w-3xl mx-auto font-inter'>
       <Head>
-        <title>Surya Ashish - Porfolio</title>
+        <title>Surya Ashish &middot; Porfolio</title>
         <meta charset='utf-8' />
         <meta
           name='Portfloio'

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -9,7 +11,7 @@
 
 body {
   font-family: 'Helvetica';
-  background-color: #121215;
+  background-color: #282c34;
   color: white !important;
   transition: all;
   animation-duration: 500ms;

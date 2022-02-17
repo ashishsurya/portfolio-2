@@ -52,7 +52,7 @@ export default function NavBar() {
         </div>
       </Modal>
       {/* modal end */}
-      <nav className='hidden sm:flex  sm:items-center sm:justify-center h-[80px] font-mono space-x-3 md:space-x-5 !text-green-300 font-extrabold'>
+      <nav className='hidden sm:flex  sm:items-center sm:justify-center h-[80px] font-mono space-x-3 md:space-x-5 !text-[#61DAFB] font-extrabold'>
         <p className=''>
           <Link href={'/'}>/home</Link>
         </p>
