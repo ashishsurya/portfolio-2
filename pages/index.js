@@ -1,31 +1,17 @@
 import Head from 'next/head';
-import { useRef } from 'react';
-import ContactContainer from '../components/ContactContainer';
-import FeaturedProjects from '../components/FeaturedProjects';
-import Hero from '../components/Hero';
-import NavBar from '../components/NavBar';
-import BasicTabs from '../components/SkillsTabsContainer';
+import Header from '../components/Header';
+import Main from '../components/Main';
 
 export default function Home() {
-  const footerRef = useRef(null);
-
   return (
-    <div className='max-w-3xl mx-auto font-inter'>
+    <div>
       <Head>
-        <title>Surya Ashish &middot; Porfolio</title>
-        <meta charset='utf-8' />
-        <meta
-          name='Portfloio'
-          CONTENT='Portfolio of Surya Ashish'
-        />
+        <title>Surya Ashish &middot; Portfolio</title>
       </Head>
-      <NavBar />
-      <main>
-        <Hero footerRef={footerRef} />
-        <FeaturedProjects />
-        <BasicTabs />
-        <ContactContainer reference={footerRef} />
-      </main>
+      <section className='max-w-5xl mx-auto'>
+        <Header />
+        <Main />
+      </section>
     </div>
   );
 }

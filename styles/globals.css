@@ -1,34 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: 'Helvetica';
-  src: url('/fonts/Helvetica/Helvetica.ttf');
-}
-
-body {
-  font-family: 'Helvetica';
-  background-color: #282c34;
-  color: white !important;
-  transition: all;
-  animation-duration: 500ms;
-}
-
-@layer components {
-}
-
-.cursor-newtab {
-  cursor: url('https://img.icons8.com/material-outlined/24/ffffff/up-right-arrow.png'),
-    pointer;
-}
-
-.MuiTab-root {
-  color: white !important;
-}
-
-.MuiTabPanel-root {
-  color: green !important;
+@layer base {
+  body {
+    @apply bg-white min-h-screen text-black font-custom;
+  }
 }
